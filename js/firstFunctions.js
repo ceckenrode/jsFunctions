@@ -8,9 +8,9 @@
   smallerLarger();
   return;
  }  else if (number1 > number2) {
-    alert("The first number is larger than the second number!!!");
+    alert("The first number, " + number1 + " is larger than the second number, " + number2 + "!");
  }  else if (number2 > number1) {
-    alert("The second number is larger than the first number!!!");
+    alert("The second number, " + number2 + " is larger than the first number, " + number1 + "!");
  }  else {
     alert("The numbers are equal to eachother!!!");
  }
@@ -29,3 +29,23 @@
     alert("This is a number!!!");
   }
 }
+
+//-----------------------------/End of isString()------------------
+function concatenator() {
+  var ask = true;
+
+  var res = prompt("I can concatenate some Strings for you. Give me one to start with!");
+
+  while (ask===true) {
+    if (confirm("Let's add more! Press 'cancel' to stop here!")) {
+     res += " ";
+      res += prompt("What would you like to add?");
+    } else {
+        ask = false;
+        alert("Okay, your new String is logged in the console!");
+        console.log(res);
+    }
+  }
+
+
+  }
